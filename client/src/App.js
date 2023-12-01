@@ -2,6 +2,11 @@ import React from 'react';
 import './App.css';
 import axios from 'axios';
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import About from './components/About/About'
+import Contact from './components/Contact/Contact'
+import MyWork from './components/MyWork/MyWork'
+import Resume from './components/Resume/Resume'
+import SignIn from './components/SignIn/SignIn'
 
 
 class App extends React.Component {
@@ -23,10 +28,10 @@ class App extends React.Component {
 
   render(){
     return(
-      <Router exact path="/">
+      <Router>
         <div className='App'>
           <header className='App-header'>
-            <h1>Developed by <b>Vegas Cruz</b></h1>
+            <h1>Developed by Vegas Cruz</h1>
             <ul>
               <li>
                 <Link to="/">Home</Link>
@@ -53,21 +58,11 @@ class App extends React.Component {
               {this.state.data}
             </Route>
             <Switch>
-              <Route path="/about">
-                About
-              </Route>
-              <Route path="/contact">
-                Contact
-              </Route>
-              <Route path="/myWork">
-                My Work
-              </Route>
-              <Route path="/resume">
-                Resume
-              </Route>
-              <Route path="/signin">
-                Sign In
-              </Route>
+              <Route exact path="/about" component={About}/>
+              <Route exact path="/contact" component={Contact}/>
+              <Route exact path="/mywork" component={MyWork}/>
+              <Route exact path="/resume" component={Resume}/>
+              <Route exact path="/signin" component={SignIn}/>
             </Switch>
           </main>
         </div>
