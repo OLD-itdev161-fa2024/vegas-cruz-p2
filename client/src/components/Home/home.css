@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media screen and (max-width: 475px) {
+    #title{
+        font-size: 40px;
+        font-weight: 600;
+    }
+}
