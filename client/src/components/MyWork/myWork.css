@@ -1,0 +1,49 @@
+.leftArrowStyles{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: -25%;
+    font-size: 45px;
+    color: black;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.rightArrowStyles{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: -25%;
+    font-size: 45px;
+    color: black;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.containerStyles {
+    width: 500px;
+    height: 280px;
+    margin: 0 auto;
+}
+
+.sliderStyles {
+    height: 100%;
+    position: relative;
+    margin-top: 1%;
+};
+
+@media screen and (max-width: 900px) {
+    .leftArrowStyles{
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: -25%;
+        font-size: 2px;
+        color: black;
+        z-index: 1;
+        cursor: pointer;
+    }
+    .containerStyles {
+        width: 350px;
+    }
+}
