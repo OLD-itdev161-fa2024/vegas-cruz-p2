@@ -1,6 +1,19 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+body{
+    background-color: whitesmoke;
+    color: black;
+}
+.title h2{
+    font-size: 42px;
+    color: rgb(39, 207, 207);
+    margin-bottom: 0px;
+}
+img{
+    border-radius: 30px;
+}
+.professionalLinks{
+    font-size: 40px;
+}
 
 @media screen and (max-width: 475px) {
     #title{
@@ -8,3 +21,4 @@
         font-weight: 600;
     }
 }
+
