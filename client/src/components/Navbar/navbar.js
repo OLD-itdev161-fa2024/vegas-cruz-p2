@@ -5,7 +5,7 @@ import {BrowserRouter as Router, Link} from 'react-router-dom';
 
 function NavBar() {
     return(
-            <header className='App-header'>
+            <header>
                 <Link class="logoContainer" to="/">
                     <h1 class="logo">Developed by <span class="name">Vegas Cruz</span></h1>
                 </Link>

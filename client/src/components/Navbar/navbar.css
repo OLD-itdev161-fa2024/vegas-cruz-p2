@@ -25,6 +25,7 @@ body{
     padding-top: 15px;
     text-decoration: none;
     color: black;
+    margin-right: 0%;
 }
 
 .name{
@@ -37,6 +38,7 @@ body{
 }
 
  .links{
+    text-decoration: none;
     font-size: 24px;
     padding-left: 16px;
     padding-right: 16px;
