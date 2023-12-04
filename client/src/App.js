@@ -7,6 +7,7 @@ import Contact from './components/Contact/Contact';
 import MyWork from './components/MyWork/MyWork';
 import SignIn from './components/SignIn/SignIn';
 import NavBar from './components/Navbar/navbar';
+import Resume from './components/Resume/Resume';
 
 
 
@@ -24,7 +25,7 @@ function App() {
               <Route exact path="/about" component={About}/>
               <Route exact path="/contact" component={Contact}/>
               <Route exact path="/mywork" component={MyWork}/>
-              {/* <Route exact path="/resume" component={Resume}/> */}
+              <Route exact path="/resume" component={Resume}/>
               <Route exact path="/signin" component={SignIn}/>
             </Switch>
           </main>
